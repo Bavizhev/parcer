@@ -48,8 +48,9 @@ public class Main {
         List<Employee> listXML = parseXML(fileNameXML, newfileNameXML, columnMapping);
 
         String json = readString("data2.json"); // 3
+        System.out.println(json);
         List<Employee> list = jsonToList(json);
-        System.out.println(list);
-        
+        //System.out.println(list);
+
     }
 }

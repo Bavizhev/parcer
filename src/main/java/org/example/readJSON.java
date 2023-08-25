@@ -39,9 +39,9 @@ public class readJSON {
                 Employee employee = gson.fromJson(jsonArray.get(i).toString(), Employee.class);
                 list.add(employee);
             }
+            return list;
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
-        return list;
     }
 }
